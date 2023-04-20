@@ -1,0 +1,85 @@
+:root{
+    font-family: impact;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(127, 170, 196);
+    width:100vw;
+    z-index: 10;
+    
+}
+
+ul {
+    display:flex;
+    justify-content: space-around;
+    padding-left:0;
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+main{
+    margin-top: 100px;
+}
+h1{
+    font-family: Papyrus;
+    font-size: xx-large;
+    font-weight: 900;
+}
+p{
+    font-family: Papyrus;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+img {
+    display: none;
+} 
+
+input {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: relative;
+}
+
+@media (max-width: 400px) {
+    img {
+        display: block;
+    }
+    ul {
+        position: absolute;
+        top: 40;
+        left: 0;
+        background-color:rgb(127, 170, 196);
+        flex-direction: column;
+        gap: 20px;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        display: none;
+    }
+    input:checked + ul {
+        display: flex;
+    }
+    input {
+        display: block;
+    }
+}
