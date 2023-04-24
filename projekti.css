@@ -1,0 +1,29 @@
+body{
+    background-image: url('howl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    }
+    
+  .grid-item{
+    background-color: rgba(127, 170, 196);
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Papyrus;
+    font-weight: 900;
+  }
+
+b{
+    color:rgb(15, 72, 99);
+}
+div{
+    color:white;
+}
